@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Hidden MC Version</title>
+<link href="Untitled1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="util.min.js"></script>
+<script src="modal.min.js"></script>
+<script src="wwb16.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#Dialog1').on('show.bs.modal', function (e) 
+   {
+      $('#Dialog1 .modal-dialog').removeClass('animate-hide');
+      $('#Dialog1 .modal-dialog').addClass('animate-show');
+   });
+   $('#Dialog1 .modal-dialog').draggable({handle: '.modal-header'});
+   $('#Dialog1-btn1').click(function()
+   {
+      window.location.href= Math.random() >= 0.25 ? 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' : './UNDEFINE.exe';
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<center>
+   <img src="crafting_table.png"><br/><img src="img0001.png"><br/>
+   <span style="color:#FFFFFF;font-family:Arial;font-size:27px;">We have found a missing build of minecraft, but this build is not stable. This version has a lot of interesting content. Welcome to download and play</span><br/>
+   <input type="button" id="Button1" onclick="$(&#39;#Dialog1&#39;).modal(&#39;show&#39;);return false;" name="" value="Download" style="width:187px;height:43px;">
+</center>
+<div id="Dialog1" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h4 class="modal-title">Prompt before downloading</h4>
+</div>
+<div class="modal-body">
+</span><span style="color:#FFFFFF;font-family:Arial;font-size:21px;">This is an executable file, please double click to execute it.</span>
+</div>
+<div class="modal-footer">
+<button class="btn" id="Dialog1-btn1" type="button">Download</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
